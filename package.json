@@ -5,7 +5,6 @@
     "title": "Structured Data 📦",
     "subtitle": "Modeling real data, not just primitives",
     "githubRepo": "https://github.com/epicweb-dev/structured-data",
-    "subdomain": "structured-data",
     "instructor": {
       "name": "Kent C. Dodds",
       "avatar": "/images/instructor.png",
@@ -14,7 +13,10 @@
     "product": {
       "host": "www.epicweb.dev",
       "displayName": "EpicWeb.dev",
-      "displayNameShort": "Epic Web"
+      "displayNameShort": "Epic Web",
+      "slug": "structured-data",
+      "discordChannelId": "1161045224907341972",
+      "discordTags": ["1161046174439063593", "1474187454452859041"]
     },
     "appType": "export"
   },
