@@ -22,7 +22,11 @@ Rest parameters are type-safe in TypeScript:
 ```ts
 // TypeScript knows this is Array<number>
 function add(...numbers: Array<number>): number {
-	return numbers.reduce((a, b) => a + b, 0)
+	let total = 0
+	for (const n of numbers) {
+		total += n
+	}
+	return total
 }
 
 add(1, 2, 3) // ✅

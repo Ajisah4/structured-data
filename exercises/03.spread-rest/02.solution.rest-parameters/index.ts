@@ -3,8 +3,11 @@
 
 // Rest parameters collect all arguments into an array
 function multiply(...numbers: Array<number>) {
-	if (numbers.length === 0) return 1
-	return numbers.reduce((a, b) => a * b, 1)
+	let product = 1
+	for (const n of numbers) {
+		product *= n
+	}
+	return product
 }
 
 // Combining regular parameter with rest
@@ -16,7 +19,11 @@ function logWithPrefix(prefix: string, ...messages: Array<string>) {
 
 // Sum all numbers using rest parameters
 function sum(...numbers: Array<number>) {
-	return numbers.reduce((a, b) => a + b, 0)
+	let total = 0
+	for (const n of numbers) {
+		total += n
+	}
+	return total
 }
 
 // Rest + spread combo - collect arrays, spread to merge
