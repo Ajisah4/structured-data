@@ -6,30 +6,38 @@
 // - email: string
 // - bio?: string
 // - website?: string
+type UserProfile = {
+  name: string;
+  email: string;
+  bio?: string;
+  website?: string;
+};
 
 // 🐨 type this as a UserProfile
-const alice = {
-	name: 'Alice',
-	email: 'alice@example.com',
-}
+const alice: UserProfile = {
+  name: "Alice",
+  email: "alice@example.com",
+};
 
 // 🐨 type this as a UserProfile
-const bob = {
-	name: 'Bob',
-	email: 'bob@example.com',
-	bio: 'Software developer and TypeScript enthusiast',
-	website: 'https://bob.dev',
-}
+const bob: UserProfile = {
+  name: "Bob",
+  email: "bob@example.com",
+  bio: "Software developer and TypeScript enthusiast",
+  website: "https://bob.dev",
+};
 
 // 🐨 Create a function that displays user info
 // Handle the optional properties safely
-// 💰 Optional properties may be undefined
+function displayUserInfo(user: UserProfile): void {
+  console.log(`Name: ${user.name}`);
+  console.log(`Email: ${user.email}`);
+  console.log(`Bio: ${user.bio ?? "No bio provided"}`);
+  console.log(`Website: ${user.website ?? "No website provided"}`);
+}
 
-// function displayUserInfo(user: { ... }): void {
-//   console.log(`Name: ${user.name}`)
-//   console.log(`Email: ${user.email}`)
-//   console.log(`Bio: ${user.bio ?? 'No bio provided'}`)
-// }
+displayUserInfo(alice);
+displayUserInfo(bob);
 
 // 🐨 Export your variables so we can verify your work
-// export { alice, bob }
+export { alice, bob };
