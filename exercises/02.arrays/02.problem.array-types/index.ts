@@ -20,13 +20,13 @@ const products: Product[] = [
     inStock: true,
   },
   {
-    name: "Keyboard",
-    price: 49.99,
+    name: "Mouse",
+    price: 29.99,
     inStock: true,
   },
   {
-    name: "Mouse",
-    price: 25.99,
+    name: "Keyboard",
+    price: 79.99,
     inStock: false,
   },
 ];
@@ -34,7 +34,7 @@ const products: Product[] = [
 // 🐨 Add a new product using push
 products.push({
   name: "Monitor",
-  price: 199.99,
+  price: 299.99,
   inStock: true,
 });
 
