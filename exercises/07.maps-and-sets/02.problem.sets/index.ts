@@ -2,22 +2,25 @@
 // Removing duplicates
 
 const tags = [
-	'typescript',
-	'data',
-	'typescript',
-	'arrays',
-	'data',
-	'objects',
+  'typescript',
+  'data',
+  'typescript',
+  'arrays',
+  'data',
+  'objects',
 ]
 
-// 🐨 Create a Set of unique tags
+// Create a Set of unique tags
+const uniqueTags = new Set(tags)
 
-// 🐨 Check whether the set has the "typescript" tag
+// Check whether the set has the "typescript" tag
+const hasTypeScript = uniqueTags.has('typescript')
 
-// 🐨 Convert the set back into an array
+// Convert the set back into an array
+const tagList = Array.from(uniqueTags)
 
 // console.log('Unique tags:', tagList)
 // console.log('Has TypeScript:', hasTypeScript)
 
-// 🐨 Export your variables so we can verify your work
-// export { uniqueTags, hasTypeScript, tagList }
+// Export your variables so we can verify your work
+export { uniqueTags, hasTypeScript, tagList }
